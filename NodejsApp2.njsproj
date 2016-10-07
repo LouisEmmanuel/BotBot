@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{deaaf47e-0259-4b14-8344-1a660f2fb22c}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>bot-server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="app.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="bot-server-1.js" />
+    <Compile Include="bot-server.js" />
+    <Compile Include="bot.js" />
+    <Compile Include="const.js" />
+    <Compile Include="facebook.js" />
+    <Compile Include="index.js" />
+    <Compile Include="index_messenger.js" />
+    <Compile Include="messenger.js" />
+    <Compile Include="mongodb.js" />
+    <Compile Include="server.js" />
+    <Compile Include="wit.js" />
+    <Content Include="images\people-512.png" />
+    <Content Include="images\bot-de-telegram.jpg" />
+    <Content Include="images\hex-loader2.gif" />
+    <Compile Include="lib\config.js" />
+    <Compile Include="lib\interactive.js" />
+    <Compile Include="lib\log.js" />
+    <Compile Include="lib\wit.js" />
+    <Content Include="myExpressApp\package.json" />
+    <Compile Include="myExpressApp\app.js" />
+    <Compile Include="src\basic.js" />
+    <Compile Include="src\bot-test.js" />
+    <Compile Include="src\joke.js" />
+    <Compile Include="src\messenger.js" />
+    <Compile Include="src\quickstart.js" />
+    <Content Include="__tests__\msg.json" />
+    <Compile Include="__tests__\bot_test.js" />
+    <Compile Include="__tests__\const_test.js" />
+    <Compile Include="__tests__\facebook_test.js" />
+    <Compile Include="myExpressApp\routes\index.js" />
+    <Compile Include="myExpressApp\routes\users.js" />
+    <Content Include="myExpressApp\views\error.jade" />
+    <Content Include="myExpressApp\views\index.jade" />
+    <Content Include="myExpressApp\views\layout.jade" />
+    <Content Include="myExpressApp\public\stylesheets\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\async\" />
+    <Folder Include="typings\globals\babel-core\" />
+    <Folder Include="typings\globals\bl\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\isomorphic-fetch\" />
+    <Folder Include="typings\globals\node-uuid\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\request\" />
+    <Folder Include="typings\globals\sleep\" />
+    <Folder Include="typings\globals\socket.io\" />
+    <Folder Include="__tests__" />
+    <Folder Include="images" />
+    <Folder Include="lib" />
+    <Folder Include="myExpressApp" />
+    <Folder Include="myExpressApp\bin" />
+    <Folder Include="myExpressApp\public" />
+    <Folder Include="myExpressApp\public\images" />
+    <Folder Include="myExpressApp\public\javascripts" />
+    <Folder Include="myExpressApp\public\stylesheets" />
+    <Folder Include="myExpressApp\routes" />
+    <Folder Include="myExpressApp\views" />
+    <Folder Include="src" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\async\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\babel-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\bl\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\isomorphic-fetch\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node-uuid\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\request\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\sleep\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\socket.io\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
