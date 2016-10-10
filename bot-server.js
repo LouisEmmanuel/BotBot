@@ -37,7 +37,7 @@ const actions = {
     return Promise.resolve();
   },
 
-  cancelOrder({context, entities}) {
+  cancelOrder(context, entities) {
     //console.log("------ Cancellation Function Called ! ---------");
     //console.log("Order No : " ,JSON.stringify(entities));
     try {
@@ -74,7 +74,7 @@ const actions = {
     return Promise.resolve();
   },
 
-  getOrderStatus({context, entities}) {
+  getOrderStatus(context, entities) {
     //console.log("------ Order Status Function Called ! ---------");
     //console.log("Order No : " ,JSON.stringify(entities));
     //console.log("Processing your order Information...");
