@@ -1,7 +1,7 @@
 {
-  "name": "Wit-Facebook",
+  "name": "BotBot",
   "version": "1.0.0",
-  "description": "Simple Wit-Facebook",
+  "description": "bot socket wit",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -26,6 +26,7 @@
     "body-parser": "^1.15.0",
     "express": "4.14.0",
     "jest-cli": "^0.7.1",
+    "node-rest-client": "^2.0.1",
     "node-uuid": "^1.4.7",
     "node-wit": "^3.2.2",
     "request": "^2.72.0",
@@ -33,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LouisEmmanuel/Wit-Facebook"
+    "url": "https://github.com/LouisEmmanuel/BotBot"
   },
   "bugs": {
     "url": "https://github.com/hunkim/Wit-Facebook/issues"
