@@ -32,6 +32,12 @@
     "request": "^2.72.0",
     "socket.io": "1.5.0"
   },
+  
+  "engines": {
+    "node": "6.7.x",
+	"npm": "3.10.x"
+  },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/LouisEmmanuel/BotBot"
