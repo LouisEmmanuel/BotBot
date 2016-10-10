@@ -212,7 +212,7 @@ function clientRequest(url, method, request) {
   return "";
 }
 
-const client = new Wit({accessToken, actions});
+const client = new Wit(accessToken, actions);
 
 var express = require('express');
 var app = express();
